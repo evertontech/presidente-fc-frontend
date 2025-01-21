@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
 import Campo from "~/components/campo";
-import Campo from './../components/campo';
 
 export const meta: MetaFunction = () => {
   return [
