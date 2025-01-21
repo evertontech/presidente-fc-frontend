@@ -11,9 +11,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <main className="h-screen flex items-center justify-center px-5">
       <Campo></Campo>
-    </div>
+    </main>
   );
 }
 
