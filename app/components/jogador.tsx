@@ -3,24 +3,24 @@ import { createAvatar } from "@dicebear/core";
 import { useMemo } from "react";
 
 interface Props {
-    corDaCamisa: string,
+  className: string,
 }
 
-export default function Jogador( props: Props ) {
+export default function Jogador(props: Props) {
   const avatar = useMemo(() => {
     return createAvatar(avataaars, {
       size: 128,
       seed: Math.random().toString(),
-      clothesColor: [props.corDaCamisa],
       clothing: ["collarAndSweater"],
-      eyes: ["surprised"],
-      eyebrows: ["default"],
-      mouth: ["serious"],
+      eyes: ["squint"],
+      eyebrows: ["defaultNatural"],
+      mouth: ["twinkle"],
       facialHairProbability: 25,
-      top: ["bun", "dreads01", "frizzle", "dreads02", "fro", "shaggy", "shortCurly", "shortFlat", "shortRound", "theCaesar", "shortWaved", "sides"],
+      top: ["dreads01", "frizzle", "dreads02", "fro", "shaggy", "shortCurly", "shortFlat", "shortRound", "theCaesar", "shortWaved"],
+      topProbability: 85,
       accessoriesProbability: 0
     }).toDataUri();
   }, []);
 
-  return <img src={avatar} alt="Avatar" />;
+  return <img src={avatar} alt="Avatar" className={`${props.className}`} />;
 }
