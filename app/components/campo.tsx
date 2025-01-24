@@ -1,7 +1,11 @@
-export default function Campo() {
+interface Props {
+  className: string;
+}
+
+export default function Campo(props: Props) {
   return (
     <article
-      className="h-2/3 max-h-[50rem] w-full max-w-[35rem] flex flex-col justify-between"
+      className={`h-2/3 max-h-[50rem] w-full max-w-[35rem] flex flex-col justify-between ${props.className}`}
       style={{
         background:
           "repeating-linear-gradient(#2d561c, #2d561c 9.09%, #356029 9.09%, #356029 18.18%)",
