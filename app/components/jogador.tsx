@@ -42,12 +42,12 @@ export default function Jogador(props: Props) {
   return (
     <article className={`flex flex-col items-center ${props.className}`}>
       <img src={avatar} alt="Avatar" />
-      <section className="flex -m-3">
+      <section className="flex -m-5">
         <span className="text-sm bg-gray-300 text-black px-2 py-1 rounded-xl w-fit text-center font-bold rounded-r-none">
           {dados.nome}
         </span>
         <span className="text-sm bg-blue-800 text-white px-2 py-1 rounded-xl w-fit text-center font-bold rounded-l-none">
-          {dados.pontuacao}
+          {dados.pontuacao} pts.
         </span>
       </section>
     </article>
