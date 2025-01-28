@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className="h-screen flex items-center justify-center px-5">
+    <main className="h-screen flex items-center justify-center px-2">
       <Escalacao></Escalacao>
     </main>
   );
