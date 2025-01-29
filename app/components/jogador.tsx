@@ -9,7 +9,7 @@ interface Props {
 
 export default function Jogador(props: Props) {
   const dados = {
-    nome: faker.person.firstName("male"),
+    nome: faker.person.lastName("male"),
     abreviacaoSobrenome: faker.person.lastName("male").charAt(0),
     pontuacao: faker.number.int({ min: -30, max: 100 }),
   };
@@ -47,7 +47,7 @@ export default function Jogador(props: Props) {
           {dados.nome}
         </span>
         <span className="text-[10px] text-nowrap bg-blue-800 text-white px-1 rounded-xl w-fit text-center font-bold rounded-l-none">
-        {dados.pontuacao} ⭐
+        🏆 {dados.pontuacao} pts
         </span>
       </section>
     </article>
