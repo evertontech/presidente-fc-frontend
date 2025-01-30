@@ -11,7 +11,7 @@ export default function Escalacao() {
           <Jogador className=""></Jogador>
         </section>
         {/* PONTAS */}
-        <section className="flex flex-1 justify-between px-10">
+        <section className="flex flex-1 justify-between gap-4">
           <Jogador className=""></Jogador>
           <Jogador className=""></Jogador>
         </section>
