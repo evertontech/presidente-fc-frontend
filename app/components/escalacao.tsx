@@ -25,7 +25,7 @@ export default function Escalacao() {
           <Jogador className=""></Jogador>
         </section>
         {/* LATERAIS */}
-        <section className="flex flex-1 justify-between px-7">
+        <section className="flex flex-1 justify-between px-7 gap-5">
           <Jogador className=""></Jogador>
           <Jogador className=""></Jogador>
         </section>
