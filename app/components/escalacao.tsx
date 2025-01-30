@@ -30,7 +30,7 @@ export default function Escalacao() {
           <Jogador className=""></Jogador>
         </section>
         {/* ZAGUEIROS */}
-        <section className="flex flex-1 justify-evenly gap-3 px-20">
+        <section className="flex flex-1 justify-evenly px-20">
           <Jogador className=""></Jogador>
           <Jogador className=""></Jogador>
         </section>
