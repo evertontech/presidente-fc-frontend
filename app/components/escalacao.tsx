@@ -30,12 +30,12 @@ export default function Escalacao() {
           <Jogador className=""></Jogador>
         </section>
         {/* ZAGUEIROS */}
-        <section className="flex flex-1 justify-evenly px-20">
+        <section className="flex flex-1 justify-evenly">
           <Jogador className=""></Jogador>
           <Jogador className=""></Jogador>
         </section>
         {/* GOLEIRO */}
-        <section className="flex flex-1 justify-evenly">
+        <section className="flex flex-1 justify-center">
           <Jogador className=""></Jogador>
         </section>
       </article>
