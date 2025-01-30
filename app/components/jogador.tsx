@@ -44,7 +44,7 @@ export default function Jogador(props: Props) {
       <img className="h-1/2" src={avatar} alt="Avatar" />
       <section className="flex -m-1">
         <span className="text-[10px] bg-pink-600 text-black px-1 rounded-xl w-fit text-center font-bold rounded-r-none">
-          <h1>CF</h1>
+          <h1>CAM</h1>
         </span>
         <span className="text-[10px] bg-gray-300 text-black px-1 rounded-l-none w-fit text-center font-bold rounded-r-none">
           {dados.nome}
