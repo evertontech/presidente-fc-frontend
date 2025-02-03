@@ -2,9 +2,11 @@ import { avataaars } from "@dicebear/collection";
 import { createAvatar } from "@dicebear/core";
 import { useMemo } from "react";
 import { faker } from "@faker-js/faker";
+import PosicaoEnum from "~/enums/posicaoEnum";
 
 interface Props {
-  className: string;
+  className?: string;
+  posicao: (typeof PosicaoEnum) [keyof typeof PosicaoEnum];
 }
 
 export default function Jogador(props: Props) {
@@ -13,6 +15,7 @@ export default function Jogador(props: Props) {
     abreviacaoSobrenome: faker.person.lastName("male").charAt(0),
     pontuacao: faker.number.int({ min: -30, max: 100 }),
   };
+
   const avatar = useMemo(() => {
     return createAvatar(avataaars, {
       size: 128,
@@ -43,8 +46,8 @@ export default function Jogador(props: Props) {
     <article className={`flex flex-col items-center ${props.className}`}>
       <img className="h-1/2" src={avatar} alt="Avatar" />
       <section className="flex -m-1">
-        <span className="text-[10px] bg-pink-600 text-black px-1 rounded-xl w-fit text-center font-bold rounded-r-none">
-          <h1>CAM</h1>
+        <span className={`text-[10px] px-1 rounded-xl w-fit text-center font-bold rounded-r-none ${props.posicao.corFonte} ${props.posicao.corFundo}`}>
+          <h1>{props.posicao.abreviacao}</h1>
         </span>
         <span className="text-[10px] bg-gray-300 text-black px-1 rounded-l-none w-fit text-center font-bold rounded-r-none">
           {dados.nome}
