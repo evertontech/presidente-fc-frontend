@@ -1,25 +1,25 @@
 const PosicaoEnum = Object.freeze({
   GOLEIRO: {
     abreviacao: "GO",
-    corFonte: "text-[#FFC300]",
+    corFonte: "text-[#FF5733]",
     corFundo: "bg-[#333333]",
   },
 
   ZAGUEIRO: {
     abreviacao: "ZC",
-    corFonte: "text-[#335aff]",
+    corFonte: "text-[#FFC300]",
     corFundo: "bg-[#333333]",
   },
 
   LATERAL_DIREITO: {
     abreviacao: "LD",
-    corFonte: "text-[#335aff]",
+    corFonte: "text-[#FFC300]",
     corFundo: "bg-[#333333]",
   },
 
   LATERAL_ESQUERDO: {
     abreviacao: "LE",
-    corFonte: "text-[#335aff]",
+    corFonte: "text-[#FFC300]",
     corFundo: "bg-[#333333]",
   },
 
