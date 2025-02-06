@@ -5,7 +5,7 @@ import Jogador from "./jogador";
 export default function Escalacao() {
   return (
     <div className="flex justify-center items-center h-full w-full relative">
-      <Campo></Campo>
+      <Campo className=""></Campo>
       <article className="h-2/3 max-h-[50rem] w-full max-w-[35rem] absolute grid grid-rows-7 pt-5">
         {/* CENTROAVANTE */}
         <section className="flex flex-1 justify-center gap-3">
