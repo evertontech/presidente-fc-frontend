@@ -45,7 +45,7 @@ export default function Jogador(props: Props) {
   return (
     <article className={`flex flex-col items-center ${props.className}`}>
       <section className="flex">
-        <span className="bg-opacity-25 bg-black text-[10px] text-nowrap  text-[#ffd814] px-1 rounded-xl w-fit text-center font-bold">
+        <span className=" bg-black/40 text-[10px] text-nowrap  text-white px-1 rounded-xl w-fit text-center font-bold">
           {dados.pontuacao} pontos
         </span>
       </section>
