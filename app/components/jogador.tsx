@@ -44,16 +44,18 @@ export default function Jogador(props: Props) {
 
   return (
     <article className={`flex flex-col items-center ${props.className}`}>
+      <section className="flex">
+        <span style={{WebkitTextStroke:"0.3px black"}} className="text-[10px] text-nowrap  text-white px-1 rounded-xl w-fit text-center font-bold">
+          {dados.pontuacao} pontos
+        </span>
+      </section>
       <img className="h-1/2" src={avatar} alt="Avatar" />
       <section className="flex -m-1">
         <span className={`text-[10px] px-1 rounded-xl w-fit text-center font-bold rounded-r-none ${props.posicao.corFonte} ${props.posicao.corFundo}`}>
           <h1>{props.posicao.abreviacao}</h1>
         </span>
-        <span className="text-[10px] bg-gray-300 text-black px-1 rounded-l-none w-fit text-center font-bold rounded-r-none">
+        <span className="text-[10px] bg-[#131921] text-white px-1 rounded-l-none w-fit text-center font-bold rounded-xl">
           {dados.nome}
-        </span>
-        <span className="text-[10px] text-nowrap bg-blue-800 text-white px-1 rounded-xl w-fit text-center font-bold rounded-l-none">
-          🏆 {dados.pontuacao} pt
         </span>
       </section>
     </article>
