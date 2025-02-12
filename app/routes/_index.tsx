@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import BarraDeNavegacao from "~/components/barraDeNavegacao";
 import Escalacao from "~/components/escalacao";
-
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,7 +16,8 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <main className="h-screen flex flex-col items-center justify-center bg-gray-100">
-      <Escalacao></Escalacao>
+      <Escalacao />
+      <BarraDeNavegacao />
     </main>
   );
 }
