@@ -1,19 +1,24 @@
 import { Button } from "~/components/ui/button";
+import { MdOutlineHome } from "react-icons/md";
+import { GiSoccerField } from "react-icons/gi";
+import { ImClipboard } from "react-icons/im";
+import { BsTrophy } from "react-icons/bs";
+import { PiSoccerBallFill } from "react-icons/pi";
 
 export default function BarraDeNavegacao() {
   return (
     <nav className="flex justify-around items-center bg-white w-full h-20 fixed bottom-0">
       <Button variant="ghost" className="flex flex-col">
-        Início
+        <MdOutlineHome /> Início
       </Button>
       <Button variant="ghost" className="flex flex-col">
-        Escalação
+        <PiSoccerBallFill /> Escalação
       </Button>
       <Button variant="ghost" className="flex flex-col">
-        Tática
+        <ImClipboard /> Tática
       </Button>
       <Button variant="ghost" className="flex flex-col">
-        Ligas
+        <BsTrophy /> Ligas
       </Button>
     </nav>
   );
